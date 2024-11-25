@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="lt"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Informatikos mokymosi medžiaga</title> 
+        <link rel="stylesheet" href="stylesB.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    </head> 
+    <body> 
+        <header> 
+            <h1>Informatikos mokymosi medžiaga</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#Pradžia" onclick="showPage('Pradžia')">Pradžia</a></li> 
+                    <li><a href="#Apie" onclick="showPage('Apie')">Apie</a></li> 
+                    <li><a href="#Kontaktai" onclick="showPage('Kontaktai')">Kontaktai</a></li> 
+                </ul> 
+            </nav> 
+        </header>
+        <div class="image-container">
+            <img src="images/Paveikslėlis.png" alt="Paveiklslėlis">
+        </div> 
+        <main> 
+            <section id="Pradžia" class="page"> 
+                <h2>Sveiki atvykę!</h2> 
+                <p>Čia rasite mokymosi medžiagą pagal klases.</p> 
+                <div class="class-buttons"> 
+                    <button onclick="navigateTo('5 klase.html')">5 klasė</button> 
+                    <button onclick="navigateTo('6 klase.html')">6 klasė</button> 
+                    <button onclick="navigateTo('7 klase.html')">7 klasė</button> 
+                    <button onclick="navigateTo('8 klase.html')">8 klasė</button> 
+                </div> 
+            </section> 
+            <section id="Apie" class="page" style="display: none;"> 
+                <h2>Apie</h2> 
+                <p>Šis puslapis skirtas mokymuisi ir pagalbai informatikos srityje.</p> 
+            </section> 
+            <section id="Kontaktai" class="page" style="display: none;"> 
+                <h2>Kontaktai</h2> 
+                <p>Vardas KristinaSep</p>
+                <p>El. paštas: kristina.Rimk@gmail.com</p> 
+                <p>Telefonas: +370 60084170</p> 
+            </section>
+        </main> 
+        <footer> 
+            <p>&copy; 2024 Informatikos Mokymosi Platforma</p> 
+        </footer> 
+        <script src="mainB.js"></script>
+    </body>
+</html>
+
